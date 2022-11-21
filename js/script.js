@@ -7,6 +7,10 @@
 
 //BU FOR LUP DA  2
 
+// let array = [1,2,3,4,5,6,7,8,9]
+// let newArray = []
+
+
 // for(let i = 0; i < array.length; i++){
 //     newArray.push(array[i])
 // }
@@ -14,7 +18,7 @@
 
 
 
-//FOREACH FOR LUP BILAN BIR XIL LEKIN SODDAROQ
+//FOREACH FOR LUP BILAN BIR XIL LEKIN SODDAROQ 3
 // let array = [1,2,3,4,5,6,7,8,9]
 // let newArray = []
 
@@ -25,7 +29,7 @@
 // console.log(newArray);
 
 
-//BU FOREACH DA ARRAYLAR BILAN FOYDALANISH 3
+//BU FOREACH DA ARRAYLAR BILAN FOYDALANISH 4
 // let newMalumot = []
 // let malumot = [
 //    {
@@ -56,7 +60,7 @@
 // console.log(newMalumot);
 
 
-//BU FOR LUP DA ARRAY LAR BILAN FOYDALANISH 4
+//BU FOR LUP DA ARRAY LAR BILAN FOYDALANISH 5
 // let newMalumot = []
 // let malumot = [
 //    {
@@ -86,7 +90,7 @@
 // }
 // console.log(newMalumot);
 
-//MAP haqida tushuncha 5
+//MAP haqida tushuncha 6
 // let array = [1,2,3,4,5,6,7,8,9]
 
 // a = array.map(function(elem){
@@ -94,7 +98,7 @@
 // })
 // console.log(a);
 
-// MASSIV va MAP haqida tushuncha 6
+// MASSIV va MAP haqida tushuncha 7
 // let malumot = [
 //    {
 //       ismi:  "Sanjar",
@@ -129,16 +133,17 @@
 //qo'shimcha bo'sh bo'lagan massivga tenglashtirsa ham bo'ladi "a" ni o'rniga
 
 
-//Massivda Filtrni ishlatish  7
+//Massivda Filtrni ishlatish  8
 
 // let array = [1,2,3,4,5,6,7,8,9, -1,-2,-3,-4]
 // a = array.filter(elem=>{
 //     return elem > 4
+//     return elem < 0
 // })
 // console.log(a);
 //qo'shimcha bo'sh bo'lagan massivga tenglashtirsa ham bo'ladi "a" ni o'rniga
 
-
+// Filtr amaliyotda json farmatda 9
 // let malumot = [
 //        {
 //           ismi:  "Sanjar",
@@ -169,3 +174,38 @@
     // })
     // console.log(a);
     //qo'shimcha bo'sh bo'lagan massivga tenglashtirsa ham bo'ladi "a" ni o'rniga
+
+
+    //Takrorlash
+
+   //for lup massivlar bilan amalyot
+
+let newMalumot = []
+let malumot = [
+   {
+      ismi:  "Sanjar",
+      familyasi: "Usmonaliyev",
+      yoshi: 22,
+      email: "sanjari.@gmail.com",
+      uylanganmi: false
+   },
+   {
+      ismi:  "Jon Doe",
+      familyasi: "Jon",
+      yoshi: 30,
+      email: "joniy.@gmail.com",
+      uylanganmi: true
+   },
+   {
+      ismi:  "Abdullox",
+      familyasi: "Karimov",
+      yoshi: 10,
+      email: "joniy.@gmail.com",
+      uylanganmi: false
+   },                                 
+]
+
+ newMalumot = malumot.filter(function(elem){
+   return elem.email
+})
+console.log(malumot);
