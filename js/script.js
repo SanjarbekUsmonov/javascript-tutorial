@@ -180,32 +180,129 @@
 
    //for lup massivlar bilan amalyot
 
-let newMalumot = []
-let malumot = [
-   {
-      ismi:  "Sanjar",
-      familyasi: "Usmonaliyev",
-      yoshi: 22,
-      email: "sanjari.@gmail.com",
-      uylanganmi: false
-   },
-   {
-      ismi:  "Jon Doe",
-      familyasi: "Jon",
-      yoshi: 30,
-      email: "joniy.@gmail.com",
-      uylanganmi: true
-   },
-   {
-      ismi:  "Abdullox",
-      familyasi: "Karimov",
-      yoshi: 10,
-      email: "joniy.@gmail.com",
-      uylanganmi: false
-   },                                 
-]
+// let newMalumot = []
+// let malumot = [
+//    {
+//       ismi:  "Sanjar",
+//       familyasi: "Usmonaliyev",
+//       yoshi: 22,
+//       email: "sanjari.@gmail.com",
+//       uylanganmi: false
+//    },
+//    {
+//       ismi:  "Jon Doe",
+//       familyasi: "Jon",
+//       yoshi: 30,
+//       email: "joniy.@gmail.com",
+//       uylanganmi: true
+//    },
+//    {
+//       ismi:  "Abdullox",
+//       familyasi: "Karimov",
+//       yoshi: 10,
+//       email: "joniy.@gmail.com",
+//       uylanganmi: false
+//    },                                 
+// ]
 
- newMalumot = malumot.filter(function(elem){
-   return elem.email
-})
-console.log(malumot);
+//  newMalumot = malumot.filter(function(elem){
+//    return elem.email
+// })
+// console.log(malumot);
+
+
+// Funksiyalar bilan ishlash
+
+
+// function funk (a,b){
+//    return a*b
+// }
+// console.log(funk(3,4));
+
+// let sum = function funk (){
+   
+// }
+// console.log(funk(3,8));
+
+//oddiy funsiya
+
+// let user = ()=>{
+//    console.log('hello');
+// }
+// user()
+
+//Birinchi yo'li funksiyani topish
+
+// let user = {
+//    name: 'sanjar',
+//    sayHi: function(){
+//       console.log('hello '+user.name);
+//    }
+// }
+// user.sayHi()
+
+//ikkinchi yo'li
+
+// let user = {
+//    name: 'sanjar'
+// }
+
+// user.sayHi = function(){
+//    console.log("Hello "+this.name);
+// }
+// user.sayHi()
+
+// let user = {
+//    name: 'sanjar'
+// }
+// user.sayhi = function(){
+//    console.log('salom '+this.name);
+// }
+
+// user.sayhi()
+
+// function user (name){
+//    let a = 'salom '+name
+//    console.log(a);
+// }
+// user('sanjar')
+
+//zamikayna
+// function sum(a){
+//    return function(b){
+//       return a*b
+//    }
+// }
+// console.log(sum (4)(2));
+
+function a (){
+   let b = 1
+   return function(){
+      return b++
+   }
+}
+let c = a()
+
+console.log(c());
+console.log(c());
+console.log(c());
+console.log(c());
+console.log(c());
+console.log(c());
+console.log(c());
+
+function q (){
+   let w = 1
+   return function (){
+      return w--
+   }
+}
+let r = q()
+
+console.log(r());
+console.log(r());
+console.log(r());
+console.log(r());
+console.log(r());
+console.log(r());
+console.log(r());
