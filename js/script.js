@@ -1,308 +1,173 @@
-// Function bilan ishlash 1
-// function aa (a){
-//    return a * 2
+// function setAlphabet(){
+//    let ar = [];
+//  for(let i = 0; i < arguments.length; i++ ){
+//       ar[i] = arguments[i]
+//  }
+//    console.log(ar.concat(['sanjar','sasha']));
 // }
-// console.log(aa(5));
-
-
-//BU FOR LUP DA  2
-
-// let array = [1,2,3,4,5,6,7,8,9]
-// let newArray = []
-
-
-// for(let i = 0; i < array.length; i++){
-//     newArray.push(array[i])
-// }
-// console.log(newArray);
+// setAlphabet('a','d','f','h')
 
 
 
-//FOREACH FOR LUP BILAN BIR XIL LEKIN SODDAROQ 3
-// let array = [1,2,3,4,5,6,7,8,9]
-// let newArray = []
 
-// array.forEach(function(elem){
-//     newArray.push(elem)
-// })
+// const ar = [1,2,3]
+// const arr = []
 
-// console.log(newArray);
-
-
-//BU FOREACH DA ARRAYLAR BILAN FOYDALANISH 4
-// let newMalumot = []
-// let malumot = [
-//    {
-//       ismi:  "Sanjar",
-//       familyasi: "Usmonaliyev",
-//       yoshi: 22,
-//       email: "sanjari.@gmail.com"
-//    },
-//    {
-//       ismi:  "Jon Doe",
-//       familyasi: "Jon",
-//       yoshi: 30,
-//       email: "joniy.@gmail.com"
-//    },
-//    {
-//       ismi:  "Abdullox",
-//       familyasi: "Karimov",
-//       yoshi: 10,
-//       email: "abdull.@gmail.com"
-//    },
-// ]
-
-// malumot.forEach(function(elem){
-//    if(elem.yoshi > 10 ){
-//         newMalumot.push(elem.ismi)
+// function setNumber(){
+//    for(let i = 0; i < ar.length; i++){
+//       arr[i] = ar[i]
 //    }
-// })
-// console.log(newMalumot);
-
-
-//BU FOR LUP DA ARRAY LAR BILAN FOYDALANISH 5
-// let newMalumot = []
-// let malumot = [
-//    {
-//       ismi:  "Sanjar",
-//       familyasi: "Usmonaliyev",
-//       yoshi: 22,
-//       email: "sanjari.@gmail.com"
-//    },
-//    {
-//       ismi:  "Jon Doe",
-//       familyasi: "Jon",
-//       yoshi: 30,
-//       email: "joniy.@gmail.com"
-//    },
-//    {
-//       ismi:  "Abdullox",
-//       familyasi: "Karimov",
-//       yoshi: 10,
-//       email: "abdull.@gmail.com"
-//    },
-// ]
-// for(let i = 0; i < malumot.length; i++){
-//      if(malumot[i].yoshi > 0){
-//          newMalumot.push(malumot[i].yoshi)
-//      }
-    
+//    console.log(arr.concat(['4','5','6']));
 // }
-// console.log(newMalumot);
-
-//MAP haqida tushuncha 6
-// let array = [1,2,3,4,5,6,7,8,9]
-
-// a = array.map(function(elem){
-//     return elem * elem
-// })
-// console.log(a);
-
-// MASSIV va MAP haqida tushuncha 7
-// let malumot = [
-//    {
-//       ismi:  "Sanjar",
-//       familyasi: "Usmonaliyev",
-//       yoshi: 22,
-//       email: "sanjari.@gmail.com",
-//       uylanganmi: false
-//    },
-//    {
-//       ismi:  "Jon Doe",
-//       familyasi: "Jon",
-//       yoshi: 30,
-//       email: "joniy.@gmail.com",
-//       uylanganmi: true
-//    },
-//    {
-//       ismi:  "Abdullox",
-//       familyasi: "Karimov",
-//       yoshi: 10,
-//       email: "abdull.@gmail.com",
-//       uylanganmi: false
-//    },
-// ]
-// a = malumot.map(elem=>{     
-//     return{
-//         ismlari: elem.ismi,
-//         yoshlari: elem.yoshi
-
-//     }
-// })
-// console.log(a);
-//qo'shimcha bo'sh bo'lagan massivga tenglashtirsa ham bo'ladi "a" ni o'rniga
+// setNumber()
 
 
-//Massivda Filtrni ishlatish  8
-
-// let array = [1,2,3,4,5,6,7,8,9, -1,-2,-3,-4]
-// a = array.filter(elem=>{
-//     return elem > 4
-//     return elem < 0
-// })
-// console.log(a);
-//qo'shimcha bo'sh bo'lagan massivga tenglashtirsa ham bo'ladi "a" ni o'rniga
-
-// Filtr amaliyotda json farmatda 9
-// let malumot = [
-//        {
-//           ismi:  "Sanjar",
-//           familyasi: "Usmonaliyev",
-//           yoshi: 22,
-//           email: "sanjari.@gmail.com",
-//           uylanganmi: false
-//        },
-//        {
-//           ismi:  "Jon Doe",
-//           familyasi: "Jon",
-//           yoshi: 30,
-//           email: "joniy.@gmail.com",
-//           uylanganmi: true
-//        },
-//        {
-//           ismi:  "Abdullox",
-//           familyasi: "Karimov",
-//           yoshi: 10,
-//           email: "abdull.@gmail.com",
-//           uylanganmi: false
-//        },
-    // ]
-
-    // a = malumot.filter(function(elem){
-       // return elem.uylanganmi           //Filter faqat true ni ko'radi
-    //    return elem.yoshi > 0
-    // })
-    // console.log(a);
-    //qo'shimcha bo'sh bo'lagan massivga tenglashtirsa ham bo'ladi "a" ni o'rniga
-
-
-    //Takrorlash
-
-   //for lup massivlar bilan amalyot
-
-// let newMalumot = []
-// let malumot = [
-//    {
-//       ismi:  "Sanjar",
-//       familyasi: "Usmonaliyev",
-//       yoshi: 22,
-//       email: "sanjari.@gmail.com",
-//       uylanganmi: false
-//    },
-//    {
-//       ismi:  "Jon Doe",
-//       familyasi: "Jon",
-//       yoshi: 30,
-//       email: "joniy.@gmail.com",
-//       uylanganmi: true
-//    },
-//    {
-//       ismi:  "Abdullox",
-//       familyasi: "Karimov",
-//       yoshi: 10,
-//       email: "joniy.@gmail.com",
-//       uylanganmi: false
-//    },                                 
-// ]
-
-//  newMalumot = malumot.filter(function(elem){
-//    return elem.email
-// })
-// console.log(malumot);
-
-
-// Funksiyalar bilan ishlash
-
-
-// function funk (a,b){
-//    return a*b
+// const user = {
+//    name: 'sanjar'
 // }
-// console.log(funk(3,4));
 
-// let sum = function funk (){
-   
+// user.sayhi = function(){
+//    console.log('hello '+this.name);
 // }
-// console.log(funk(3,8));
+// user.sayhi()
 
-//oddiy funsiya
 
-// let user = ()=>{
-//    console.log('hello');
-// }
-// user()
 
-//Birinchi yo'li funksiyani topish
 
 // let user = {
 //    name: 'sanjar',
-//    sayHi: function(){
-//       console.log('hello '+user.name);
+//    sayhi: function(){
+//       console.log("hello "+user.name);
 //    }
 // }
-// user.sayHi()
-
-//ikkinchi yo'li
-
-// let user = {
-//    name: 'sanjar'
-// }
-
-// user.sayHi = function(){
-//    console.log("Hello "+this.name);
-// }
-// user.sayHi()
-
-// let user = {
-//    name: 'sanjar'
-// }
-// user.sayhi = function(){
-//    console.log('salom '+this.name);
-// }
-
 // user.sayhi()
 
+
+
+
 // function user (name){
-//    let a = 'salom '+name
+//    let a = "Hello "+name
 //    console.log(a);
 // }
 // user('sanjar')
 
-//zamikayna
-// function sum(a){
+
+
+
+// let user = 'sanjar'
+
+// function sahyi(){
+//    console.log(user + ' hello');
+// }
+// sahyi()
+
+
+
+
+// function makeCounter (){
+//    let currentCounter = 1
+//    return function(){
+//       return currentCounter++
+//    }
+// }
+
+// let counter = makeCounter()
+// console.log(counter());
+
+
+// function sum (a){
 //    return function(b){
 //       return a*b
 //    }
 // }
-// console.log(sum (4)(2));
+// console.log(sum(3)(2));
 
-function a (){
-   let b = 1
-   return function(){
-      return b++
-   }
-}
-let c = a()
 
-console.log(c());
-console.log(c());
-console.log(c());
-console.log(c());
-console.log(c());
-console.log(c());
-console.log(c());
 
-function q (){
-   let w = 1
-   return function (){
-      return w--
-   }
-}
-let r = q()
+// const cars = [
+//     'Tesla',
+//     'BMW',
+//     'Mersedez',
+//     'Kia',
+//     'Toyota'
+// ]
 
-console.log(r());
-console.log(r());
-console.log(r());
-console.log(r());
-console.log(r());
-console.log(r());
-console.log(r());
+// const newCars = []
+
+// cars.forEach(elem => {
+//     console.log(elem);
+// })
+
+
+
+
+
+
+
+// for (var car of cars){
+//     console.log(cars);
+// }
+
+
+
+
+
+
+
+
+// for(let i = 0; i < cars.length; i++){
+//     newCars[i] = cars[i]
+// }
+// console.log(newCars);
+
+
+// const array = [1,2,3,4,5,6,7,8,9,  -1, -2,-3,-4,-5,-6,-7,-8,-9]
+
+// array.forEach(number =>{if(number > 4){console.log(number)}})
+
+// const newArray = array.filter(number=>{return number > 0})
+// console.log(newArray);
+
+
+
+
+
+
+// function funk1(){
+//     let chbox;
+
+// chbox = document.getElementById('one')
+
+// if(chbox.checked){
+//     alert('qalaysan')
+// }else(
+//     alert('zormi')
+// )
+// }
+
+
+// function funk1(){
+//     let radi = document.getElementsByName('r1')
+//     for(let i = 0; i < radi.length; i++){
+//         if(radi[i].checked){
+//             alert('bu ' +i+ ' element')
+//         }
+//     }
+// }
+
+
+// const add = function (a, b) {
+//     if (b !== undefined)
+//     return a + b
+//     return (c)=> a+c
+// }
+// console.log(add(2, 5));
+// console.log(add(5)(5));
+
+// const array = [1,2,3,4,5,6,7,8]
+
+// array.forEach(function(elem){
+//   if(elem > 0){
+//         console.log(elem * 2);
+//   }
+// })
