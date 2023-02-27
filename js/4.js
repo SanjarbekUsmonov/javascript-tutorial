@@ -8,10 +8,6 @@
 // })
 // console.log(newArray);
 
-// newArray = array.every(function(elem){
-//     return elem > 0
-// })
-// console.log(newArray);
 
 
 // let person = [
@@ -48,6 +44,6 @@
 
 //     newArray = person.some(function(elem){  //some true ni yani arrayda bor bo'lgan malumotlarni ko'radi  
         // return elem.from === "Qazaqistan"    // every esa arraydagi objectning barchasida  
-    // })                                       //malutom bo'lsayu faqat bittasida o'sha malumot bo'lmasa unda false 
+    // })                                       //malumot bo'lsayu faqat bittasida o'sha malumot bo'lmasa unda false 
     // console.log(newArray);
     

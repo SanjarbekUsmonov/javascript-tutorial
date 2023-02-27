@@ -4,10 +4,10 @@
 // let newArray = []
 
 // newArray = array.reduce(function(sum,elem){
-//     return sum +=elem
-// }, 10)                          // 10 sum ni o'ziga qabul qiladi
+//     return sum += elem
+// }, 10)
 // console.log(newArray);
-
+   // 10, sum ni o'ziga qabul qiladi
 
 // reduce praktika  //reduce chapdan o'nga ko'radi reduceRight o'ngdan chapga ko'radi
 

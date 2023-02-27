@@ -1,47 +1,29 @@
-// MASSAIVLAR BILAN ISHLASH
-
-//forEach
-// const array = [1,2,3,4,5,6,7,8,9]
+// const array = [1,2,3,4,,5,,6,7,8,9]
 // const newArray = []
 // array.forEach(function(elem){
 //     newArray.push(elem)
 // })
 // console.log(newArray);
 
-
-//for lup
 // const array = [1,2,3,4,5,6,7,8,9]
 // const newArray = []
 
 // for(let i = 0; i < array.length; i++){
 //     newArray.push(array[i])
-// }
-// console.log(newArray);
 
-//for of
-// let array = [1,2,3,4,5,6,7,8,9]
-// let newArray = []
-
-// for(let arrays of array){
-//     newArray.push(arrays)
 // }
 // console.log(newArray);
 
 
+// const map = [1,2,3,4,5,6,7,8,9]
+// let newMap = []
 
-//ForEach sonni o'ziga ko'paytirish
-// const array = [1,2,3,4,5,6,7,8,9]
-// const newArray = []
-
-// array.forEach(function(elem){
-//     newArray.push(elem * elem)
+// newMap = map.map((elem)=>{
+//     return elem + elem
 // })
 
-// console.log(newArray);
+// console.log(newMap);
 
-
-
-//forEach da objectsagi malumotni olish
 // let person = [
 //     {
 //         name: 'Sanjar',
@@ -60,7 +42,7 @@
 //     {
 //         name: 'Orzu',
 //         sName: 'Boltaboyev',
-//         age: 17,
+//         // age: 17,
 //         isMerid: false,
 //         from: 'Uzbekistan'
 //     },
@@ -74,9 +56,20 @@
 // ]
 // let newArray= []
 
-// let getName = function(elem){
-//     newArray.push(elem.name)
-// }
-
-// person.forEach(getName)
+// newArray = person.filter((elem)=>{
+//     return elem.age
+    
+// })
 // console.log(newArray);
+
+
+// const array = [-1,-2,-3]
+// let newArray = []
+
+// newArray = array.every(function(elem){
+//  return elem < 0
+// })
+// console.log(newArray);
+
+
+
